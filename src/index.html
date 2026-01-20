@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+
+    <div id="title-bar">
+      <div id="window-controls">
+        <button id="minimize-btn">—</button>
+        <button id="full-btn">▢</button>
+        <button id="close-btn">✕</button>
+      </div>
+    </div>
+
+    <h1>Code Timer App</h1>
+
+    <div id="timer">
+      <h2>Current Session</h2>
+      <div id="currentTime">00:00:00</div>
+      <button id="clockInBtn">Clock In</button>
+      <button id="clockOutBtn" disabled>Clock Out</button>
+    </div>
+
+    <div id="sessions">
+      <h2>Today's Sessions</h2>
+      <ul id="sessionList"></ul>
+    </div>
+
+    <div id="chart">
+      <h2>Weekly Hours</h2>
+      <canvas id="weeklyChart" width="400" height="200"></canvas>
+    </div>
+
+    <button id="savePdfBtn">Generate PDF</button>
+    <button id="clearBtn">Clear Sessions</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="renderer.js"></script>
+
+  </body>
+</html>
