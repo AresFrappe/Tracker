@@ -193,7 +193,7 @@ function savePdf() {
             }
         });
 
-        doc.save(`weekly-coding-report${weekRange}.pdf`);
+        doc.save(`weekly-coding-report-${weekRange}.pdf`);
 
         document.body.removeChild(canvas);
         chart.destroy();
